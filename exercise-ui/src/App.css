@@ -1,5 +1,55 @@
-.App {
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 1em;
+}
+
+th,
+td {
+  border: none;
+  width: 6em;
+  padding: 0.5em;
+}
+
+tr {
+  border: 1px solid transparent;
+}
+
+tr:hover td {
+  border: 1px solid gray;
+}
+
+body {
+  margin-top: 10em;
+  margin-bottom: 8em;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #282c34;
   text-align: center;
+  padding: 1em;
+  color: white;
+}
+
+form {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #282c34;
+  margin: auto;
+  padding: 1em;
+}
+
+table {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #282c34;
+  margin: auto;
+  padding: 1em;
 }
 
 .App-logo {
@@ -11,17 +61,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {

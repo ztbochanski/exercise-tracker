@@ -1,11 +1,11 @@
 {
-  "name": "users",
+  "name": "exercise",
   "version": "1.0.0",
   "description": "",
-  "main": "users_controller.mjs",
+  "main": "exercise-controller.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon users_controller.mjs"
+    "start": "nodemon exercise-controller.mjs"
   },
   "author": "",
   "license": "ISC",

@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import HomePage from './pages/homepage/homepage.component';
+import ShoppingListPage from './pages/shopping-list-page/shopping-list-page.component';
+import StoreListPage from './pages/store-list-page/store-list-page.component';
+import stores from './data/stores';
+import items from './data/items';
+import React from 'react';
 
-function App() {
+/** exclusively rendering routes with the <Switch> component from react router dom library, 
+the docs recommend using it to render only one page
+
+https://reactrouter.com/web/api/Switch
+**/
+
+function App() {  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route path="/shopping-list-page">
+            <ShoppingListPage items={items}/>
+          </Route>
+          <Route path="/store-list-page">
+            <StoreListPage stores={stores}/>
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
