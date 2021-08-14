@@ -18,7 +18,7 @@ const HomePage = ({ setExerciseToEdit }) => {
      */
     const onEdit = exercise => {
         setExerciseToEdit(exercise)
-        history.push("/edit-exercise-page");
+        history.push("/edit-exercise");
     }
 
     /**
@@ -61,7 +61,7 @@ const HomePage = ({ setExerciseToEdit }) => {
         <div className="homepage">
             <h1>Exercise Tracker</h1>
             <ExerciseTable exercises={exercises} onDelete={onDelete} onEdit={onEdit} headers={headers}></ExerciseTable>
-            <Link to="/create-exercise-page">New Exercise</Link>
+            <Link to="/create-exercise">New Exercise</Link>
         </div>
     );
   };

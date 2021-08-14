@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import './zip-form.styles.css'
+import './exercise-form.styles.css'
       
-const ZipForm = ({ stores, placeholder }) => {
+const ExerciseForm = ({ stores, placeholder }) => {
     const [zip, setZip] = useState("");
 
     const zipCodes = []
@@ -32,5 +32,5 @@ const ZipForm = ({ stores, placeholder }) => {
     );
 };
 
-export default ZipForm;
+export default ExerciseForm;
 

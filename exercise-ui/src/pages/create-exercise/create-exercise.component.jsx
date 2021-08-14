@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import ExerciseTable from '../../components/exercise-table/exercise-table.component';
-import ZipForm from '../../components/zip-form/zip-form.component';
+import ExerciseForm from '../../components/exercise-form/exercise-form.component';
 
 const StoreListPage = ({ stores }) => {
     
@@ -15,7 +15,7 @@ const StoreListPage = ({ stores }) => {
     <div>
       <h1>Other Locations</h1>
       <ExerciseTable headers={headers} rows={stores}></ExerciseTable>
-        <ZipForm
+        <ExerciseForm
           placeholder="12345"
           stores={stores}
         />
