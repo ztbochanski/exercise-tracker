@@ -39,10 +39,32 @@ body {
 }
 
 form {
-  font-family: "Courier New", Courier, monospace;
-  background-color: #282c34;
-  margin: auto;
   padding: 1em;
+  width: 80%;
+  margin: auto;
+}
+
+input {
+  margin: 1em;
+  padding: 1em;
+  width: 100%;
+}
+
+label {
+  text-align: left;
+}
+
+button {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  background-color: #008cba; /* Green */
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
 }
 
 table {

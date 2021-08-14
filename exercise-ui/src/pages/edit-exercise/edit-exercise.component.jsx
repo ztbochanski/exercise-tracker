@@ -33,29 +33,31 @@ const EditExercisePage = ({ exerciseToEdit }) => {
     return(
         <div className="editExercisePage">
             <h1>Edit Exercise</h1>
-            <input
-                type="text"
-                value={name}
-                onChange={e => setName(e.target.value)} />
-            <input
-                type="number"
-                value={reps}
-                onChange={e => setReps(e.target.value)} />
-            <input
-                type="number"
-                value={weight}
-                onChange={e => setWeight(e.target.value)} />
-            <input
-                type="text"
-                value={unit}
-                onChange={e => setUnit(e.target.value)} />
-            <input
-                type="text"
-                value={date}
-                onChange={e => setDate(e.target.value)} />
-            <button
-                onClick={editExercise}
-            >Save</button>
+            <form>
+                <input
+                    type="text"
+                    value={name}
+                    onChange={e => setName(e.target.value)} />
+                <input
+                    type="number"
+                    value={reps}
+                    onChange={e => setReps(e.target.value)} />
+                <input
+                    type="number"
+                    value={weight}
+                    onChange={e => setWeight(e.target.value)} />
+                <input
+                    type="text"
+                    value={unit}
+                    onChange={e => setUnit(e.target.value)} />
+                <input
+                    type="text"
+                    value={date}
+                    onChange={e => setDate(e.target.value)} />
+                <button
+                    onClick={editExercise}
+                >Save</button>
+            </form>
             <Link to="/"> Back home </Link>
         </div>
     );
